@@ -1,0 +1,28 @@
+1. What is JavaScript Framework and explain about Vue.js as one of the JavaScript Framework!
+
+   - JavaScript Framework is a set of opiniated toolset of javascript code that help developer write and manage code for their web site or web apps. Those toolset can be collections of external library or custom library specially written for that framework. Common tooling available in JavaScript framework include routing, image optimization, css-support, rendering method, data fetching method, internal state management, caching mechanism, built-in bundler, built-in compiler, etc. Tooling in JavaScript framework can be written in JavaScript language itself of another programming language, but the user interfaces usually written in combination of HTML, CSS, and JavaScript or specific JavaScript framework syntax.
+   - Vue.js as one of the JavaScript framework include almost all tooling described in first point, include routing, data-fetching, rendering method, etc, which covers most of the common features needed in frontend development. Vue.js have a declarative and component-based programming model that helps developer efficiently developer user interfaces from simple to complex.
+
+2. What is the use of ellipsis?
+   The ellipsis ( “…” symbol after text, e.g. Lorem ipsum…) is used to indicate that a portion of text has been omitted, either because it is irrelevant or because the full text is too long to fit in a given space. It is often used in web design to indicate that there is more content available beyond what is currently visible, encouraging users to click or scroll to see more. In CSS, the `text-overflow` property can be set to `ellipsis` to cause text to be truncated and an ellipsis to appear at the end of the truncated text. If you want, you can build your own custom ellipsis behavior too using JavaScript, specific JavaScript framework syntax, or JavaScript library.
+
+3. Explain animation properties below:
+
+   - @keyframes — CSS rule to writing animation code for HTML element while you can control the state of each step of animation using css style.
+   - In the scope of @keyframes CSS rule, animation-name property define the name of the keyframes animation which will be used as a reference to other CSS animation style that will applied to HTML element.
+   - In the scope of CSS animation style, animation-duration property define how long the animation will happen from the first to the last keyframe defined in @keyframes.
+   - In the scope of CSS animation style, animation-iteration-count property define the behaviour of how many iteration the animation will repeat. First keyframe to the last keyframe will count as 1 iteration. The value can be number or infinite, negative value is invalid.
+   - In the scope of CSS animation style, animation-direction property define behaviour of directional movement of HTML element at the end of each cycle of animation.
+
+4. Please explain how lazy load works in JavaScript!
+
+   - Lazy loading in JavaScript is technique for optimizing web load render performance in which browser only rendering neccessary resources that appear in current viewport, the other part of the webpage that not yet appear in the viewport are not downloaded yet (load later/lazily). We can built our custom lazy loading behaviour ourself by manipulating HTML element using html attribute, css, javascript or browser API (Intersection Observer API). Lazy loading not only happen to element that not in the viewport, UI elements that triggered by button or on hover which have content will likely to have content that being lazy loaded, since the content doesn’t necessarily need to be exist except the action triggered on the button/hover/event/interaction.
+   - In HTML image tag, we can do lazy loading by adding lazy load attribute.
+   - We can using Intesection Observer API via JavaScript on element that need to be manipulated.
+
+5. Mention at least 5 git commands and describe each function of them!
+   - git add — to add current change in file to move to staging state/area before commiting, it prevent incidental commit to our file, or can be used to baching several files to have one commit message.
+   - git commit — for commiting file change after stage state/area, or you can directly commit before staging area/state. Each commit will have their own hash code, name, and optional description.
+   - git log — for showing git history or log, we can configure at certain way for our needs.
+   - git branch — to show or manage available branches inside git repository
+   - git checkout — to move to specific branch in git repository
